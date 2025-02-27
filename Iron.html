@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" type="image/png" href="Multimedia/briefcase.png"> 
+</head>
+<body>
+    <section id="Presentación">
+        <h1>
+            Víctor Pérez Monforte
+        </h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="Portafolio.html">Inicio</a>
+                </li>
+                <li class="current">
+                    <a href="ProduccionMusical.html">Producción Musical</a>
+                </li>
+                <li>
+                    <a href="Audiovisual.html">Producción Audiovisual</a>
+                </li>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul> 
+        </div>
+    </section>
+    <section id="IronPoint">
+        <h3>
+            Para Iron Point, tuve la oportunidad de realizar una propuesta creativa de mezcla y masterización,
+            llegando a este resultado.
+        </h3>
+        <div class="container-IP">
+            <p class="text-CIP">
+                RESULTADO
+            </p>
+        </div>
+        <div class="playIP">
+            <audio id="Expired">
+                <source src="Multimedia/Expired - Iron Point (Prod. VM).mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="playAudio()" type="button">Play</button>
+            <button onclick="pauseAudio()" type="button">Pause</button>
+            <script>
+                var x = document.getElementById("Expired"); 
+                function playAudio() { 
+                  x.play(); 
+                } 
+                
+                function pauseAudio() { 
+                  x.pause(); 
+                } 
+            </script>
+        </div>
+    </section>
+    <footer>
+            <h2>
+                Víctor Pérez Monforte
+            </h2>
+            <p>
+                &copy; Esta página fue creada por Víctor Pérez Monforte a través de HTML y CSS
+            </p>
+    </footer>
+</body>
+</html>
