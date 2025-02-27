@@ -478,3 +478,44 @@ footer > p{
     border:outset;
     border-radius: 10px;
 }
+#IronPoint{
+    background: #3A86D2;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 250px;
+}
+#IronPoint > .container-IP {
+    grid-template-areas:
+    "text-CIP text-CIP"
+    "playIP playIP";
+    grid-template-columns: 1fr 1fr;
+}
+#IronPoint > .container-IP .text-CIP{
+    grid-area: text-CIP;
+}
+#IronPoint > .container-IP .playIP{
+    grid-area: playIP;
+}
+.playIP > button{
+    background: white;
+    display: inline-block;
+    border: solid #000;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    color: #306FAE;
+    font-weight: bold;
+    transition: linear;
+    transition-property: background, color;
+    transition-timing-function: linear;
+    transition-delay: .5ms;
+}
+.playIP > button:hover{
+    background: #306FAE;
+    color: white;
+}
