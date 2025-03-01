@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezcla</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" type="image/png" href="Multimedia/briefcase.png"> 
+</head>
+<body>
+    <section id="Presentación">
+        <h1>
+            Víctor Pérez Monforte
+        </h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="Portafolio.html">Inicio</a>
+                </li>
+                <li class="current">
+                    <a href="ProduccionMusical.html">Producción Musical</a>
+                </li>
+                <li>
+                    <a href="Audiovisual.html">Producción Audiovisual</a>
+                </li>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul> 
+        </div>
+    </section>
+    <section id="Mix">
+        <p>
+            Ambos proyectos representan una exploración creativa. Realicé una propuesta creativa para aplicar técnicas de mezcla y masterización y así lograr un sonido de alta calidad.
+        </p>
+        <div class="container-mix">
+            <img class="imageIP" src="https://1drv.ms/i/c/a2eb417d308cbb76/IQTpxYjd2ufMQpeGX9MVys_PAe3urskbLbUDYl6ZAjPIRx4?" alt="IronPoint">
+            <p class="textIP">
+                Créditos en IG a: @IronPoint , @RoswellProAudio
+            </p>
+            <audio id="Expired">
+                <source src="Expired - Iron Point (Prod. VM).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="buttonsIP">
+                <button class="playIP" onclick="playExpired()" type="button">Play</button>
+                <button class="pauseIP" onclick="pauseExpired()" type="button">Pause</button> 
+              
+              <script>
+              var expiredAudio = document.getElementById("Expired"); 
+              
+              function playExpired() { 
+                expiredAudio.play(); 
+              } 
+              
+              function pauseExpired() { 
+                expiredAudio.pause(); 
+              } 
+              </script>
+            </div>
+
+            <img class="imageBret" src="https://1drv.ms/i/c/a2eb417d308cbb76/IQQd7o4e3cICSqXXzRXmRpRpAWYARu0MzYoyPwoq0yopUo0?" alt="Bret">
+            <p class="textBret">
+                Créditos: @RoswellProAudio, Bret Alexander, The Band
+            </p>
+            <audio id="Bret">
+                <source src="Bret Alexander - The Weight (Prod.VM).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="buttonsBret">
+                <button class="playBret" onclick="playBret()" type="button">Play</button>
+                <button class="pauseBret" onclick="pauseBret()" type="button">Pause</button> 
+              
+              <script>
+              var bretAudio = document.getElementById("Bret"); 
+              
+              function playBret() { 
+                bretAudio.play(); 
+              } 
+              
+              function pauseBret() { 
+                bretAudio.pause(); 
+              } 
+              </script>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <h2>
+                Víctor Pérez Monforte
+            </h2>
+            <p>
+                &copy; Esta página fue creada por Víctor Pérez Monforte a través de HTML y CSS
+            </p>
+    </footer>
+</body>
+</html>
