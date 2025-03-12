@@ -1,0 +1,942 @@
+body{
+    background: #306FAE;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.current{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color:#f2f2f2;
+}
+#Presentación{
+    background: #306FAE;
+    position: relative;
+    width: 100%;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 45px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.35em;
+    padding-top: 50px;
+    color: white;
+}
+#Presentación > div > ul{
+    display: flex;
+    justify-content:space-evenly;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    list-style: none;
+    padding-right: 300px;
+    padding-left: 300px;
+    color: white;
+    
+}
+#Presentación > div > ul > li >a{
+    text-decoration: none;
+    color: black;
+}
+#Bienvenido{
+    background: #B8CDE6;
+    margin-top: 10px;
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 70px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 60px;
+    padding-top: 100px;
+    border-left: black, solid,  600px;
+}
+#Bienvenido h3{
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+#Bienvenido > div > h3 > a{
+    color: black;
+    line-height: 50px;
+}
+#Bienvenido > div >img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;    
+}
+#Proyectos{
+    background: #3A86D2;
+    height: 500px;
+    position: relative;
+    top: -58px;
+    height: 500px;
+}
+#Proyectos > div > p {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -20px;
+}
+#Proyectos > div > ul{
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+#Proyectos > div > ul > li{
+    list-style: none;
+    background: #fff86b;
+    width: 200px;
+    height: 30px;
+    align-content: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition-property: border-radius;
+    transition-timing-function: linear;
+    transition-duration: .5s;   
+}
+#Proyectos > div > ul > li:hover{
+    border-radius: 30px;
+}
+#Proyectos > div > ul > li> a{
+    text-decoration: none; 
+    color:#000;  
+}
+#Hablemos{
+    background: #f2f2f2;
+    position: relative;
+    top: -200px;
+}
+.container1{
+    display: grid;
+    grid-template-areas:
+    "text1 image1" ;
+    grid-template-columns: 1.5fr, .5 fr;
+
+}
+.container1 > div.text1{
+    grid-area: text1;
+    text-align: center;
+}
+.container1 > div.image1{
+    grid-area: image1;
+    vertical-align: middle;
+}
+.container1 > div.image1 > img{
+    margin-right: -60px;
+    margin-bottom: -5px;
+}
+.container1 > div.text1 > h2{
+    font-family: sans-serif;
+    font-size: 70px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+.container1 > div.text1 > p{
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+footer{
+    height: 20px;
+    background-color: #306FAE;
+}
+footer > h2{
+    font-family: sans-serif;
+    position: relative;
+    font-size: 50px;
+    top: -250px;
+    line-height:-15px;
+    color: white;
+}
+footer > p{
+    font-family: sans-serif;
+    position: relative;
+    top: -250px;
+    line-height: -15px;
+    text-align: center;
+    color: white;
+}
+.video1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+#MaterialPrincipal{
+    position: relative;
+}
+
+.container2 > div.container3{
+    background: #B8CDE6;
+    position: relative;
+    width: 1000px;
+    height: 80px;
+    margin-left: 100px;
+    top: -400px;
+    text-align: left;
+    width: 650px;
+    padding: 0;
+    border-radius: 10px;
+
+}
+.container2 > div.container3 > h2{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 0px;
+    position: relative;
+    top: -60px;
+    color: #2d2d2d;
+}
+
+.container4{
+    background: #B8CDE6;
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    margin-left: 100px;
+    top: -350px;
+    text-align: left;
+    border-radius: 10px;
+}
+.container4 > p{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    text-align: justify;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#MusicProd{
+    background: #bed2e8ff;
+    position: relative;
+    top: -250px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "ArtistImage1 ArtistImage2 ArtistImage3"
+        "text1 text2 text3";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow: visible;
+    gap: 20px;
+}
+#MusicProd img{
+    width: 100%;
+    max-width: 250px; 
+    height: 100%; /* Se ajusta al contenedor del grid */
+    max-height: 300px; /* Evita que sea demasiado alta */
+    border-radius: 20px; /* Redondea todas las esquinas */
+}
+#MusicProd iframe{
+    width: 100%;
+    max-width: 250px; 
+    height: 100%; /* Se ajusta al contenedor del grid */
+    max-height: 300px; /* Evita que sea demasiado alta */
+    border-radius: 20px; /* Redondea todas las esquinas */
+}
+
+#MusicProd p{
+    background: #306FAE;
+    line-height: 30px;
+    width: 120px;
+    margin-left: 90px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    transition-property: border-radius, background, color;
+    transition-timing-function: linear;
+    transition-duration: .25s;
+}
+#MusicProd video{
+    width: 100%;
+    max-width: 250px; 
+    height: 100%; /* Se ajusta al contenedor del grid */
+    max-height: 300px; /* Evita que sea demasiado alta */
+    border-radius: 20px; /* Redondea todas las esquinas */
+}
+#MusicProd > .ArtistImage1{
+    grid-area: ArtistImage1;
+    position: relative;
+    top: 30px;
+    margin-left: 25px;
+}
+#MusicProd > .Valdo{
+    grid-area: text1;
+}
+#MusicProd > .Valdo > p > a{
+    color: white;
+    text-decoration: none;
+}
+#MusicProd > .Valdo > p > a:hover{
+    color: #306FAE;
+    text-decoration: none;
+}
+#MusicProd > .Valdo > p:hover{
+    border-radius: 20px;
+    background: white;
+    
+}
+#MusicProd > .ArtistImage2{
+    grid-area: ArtistImage2;
+    position: relative;
+    top: 30px;
+    margin-left: 25px;
+}
+#MusicProd > .Buko{
+    grid-area: text2;
+    vertical-align: middle;
+}
+#MusicProd > .Buko > p > a{
+    color: white;
+    text-decoration: none;
+}
+#MusicProd > .Buko > p > a:hover{
+    color: #306FAE;
+    text-decoration: none;
+}
+#MusicProd > .Buko > p:hover{
+    border-radius: 20px;
+    background: white;
+}
+#MusicProd > .ArtistImage3{
+    grid-area: ArtistImage3;
+    position: relative;
+    top: 30px;
+    margin-left: 25px;
+}
+#MusicProd > .MezclaCreativa{
+    grid-area: text3;
+}
+#MusicProd > .MezclaCreativa > p > a{
+    color: white;
+    text-decoration: none;
+}
+
+#MusicProd > .MezclaCreativa > p > a:hover{
+    color: #306FAE;
+    text-decoration: none;
+}
+#MusicProd > .MezclaCreativa > p:hover{
+    border-radius: 20px;
+    background: white;
+}
+#ValdoExp{
+    width: 100%;
+}
+#ValdoExp > div{
+    background: #BDFFFD;
+}
+#ValdoVideos{
+    background: #7CFFC4;
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+}
+#ValdoExp > div > h2{
+    position: relative;
+    top: -50px;
+}
+/*#ValdoVideos > div{
+    margin: 25px;
+    max-width:100%;
+}*/
+#ValdoVideos > iframe{
+    width: 440px;
+    height: 200px;
+}
+#ValdoText{
+    background: #bed2e8ff;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 20px;
+    height: 700px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#ValdoText > p{
+    margin-top: -500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+#ValdoStudio{
+    display: flex;
+    position: relative;
+    top: -500px;
+    margin-left: 100px;
+    width: 85%;
+    height: 430px;
+    margin-bottom: -300px;
+}
+#ValdoStudio img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition-timing-function: linear;
+    transition-property: width, opacity;
+    transition-duration: 800ms;
+}
+#ValdoStudio img:hover{
+    width: 300px;
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.BukoMusic{
+    background: #bed2e8ff;
+    margin: 20px;
+    border-radius: 5px;
+    height: 850px;
+    margin-bottom: 200px;
+}
+.BukoMusic > h3{
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+.BukoSpoti{
+    display: grid;
+    object-fit: cover;
+    margin-top: 100px;
+    grid-template-areas: 
+    "BukoImage1 BukoImage2"
+    "Bukoplay1 Bukoplay2";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 250px;    
+    
+}
+.BukoSpoti .BukoImage1{
+    grid-area: BukoImage1;
+    border-radius: 12px;
+    width: 250px;
+}
+.BukoSpoti .Bukoplay1{
+    grid-area: Bukoplay1;
+    vertical-align: middle;
+    margin-left: -30px;
+    background: #79AADC;
+    height: 80px;
+    padding: 5px;
+    border:outset;
+    border-radius: 10px;
+}
+.BukoSpoti .BukoImage2{
+    grid-area: BukoImage2;
+    border-radius: 12px;
+    width: 250px;
+}
+.BukoSpoti .Bukoplay2{
+    grid-area: Bukoplay2;
+    vertical-align: middle;
+    margin-left: -30px;
+    background: #79AADC;
+    height: 80px;
+    padding: 5px;
+    border:outset;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    #Mix {
+        max-width: 95%;
+        padding: 20px;
+        margin: auto;
+    }
+}
+#Mix{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #3a86d2 0%, #79aadc 100%);
+    margin-bottom: 220px;
+    border-radius: 5px;
+}
+#Mix p{
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+}
+.container-mix{
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "imageIP imageBret"
+    "textIP textBret"
+    "playerIP playerBret";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #79aadc 0%, #b8cde6 100%);
+    /*background: linear-gradient(to bottom, #000 0%, #B8CDE6 100%);*/
+}
+
+.container-mix .imageIP{
+    grid-area: imageIP;
+    width: 90%;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.container-mix .textIP{
+    grid-area: textIP;
+    text-align: center;
+}
+.container-mix .buttonsIP{
+    grid-area: playerIP;
+    display: grid;
+    grid-template-areas:
+    "playIP pauseIP";
+    grid-template-columns: 1fr 1fr;
+    
+}
+.container-mix .buttonsIP .playIP{
+    grid-area: playIP;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    left: 50%;
+    border-radius: 5px;
+    color: white;
+    background: #306FAE;
+    border: solid;
+    transition-property: background, border, color;
+    transition-timing-function: linear;
+    transition-delay: 0.5ms;
+}
+.container-mix .buttonsIP .playIP:hover{
+    background: white;
+    color: #306FAE;
+    cursor:pointer;
+}
+.container-mix .buttonsIP .pauseIP{
+    grid-area: pauseIP;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    left: 20%;
+    border-radius: 5px;
+    color: white;
+    background: #306FAE;
+    border: solid;
+    transition-property: background, border, color;
+    transition-timing-function: linear;
+    transition-delay: 0.5ms;
+}
+.container-mix .buttonsIP .pauseIP:hover{
+    background: white;
+    color: #306FAE;
+    cursor:pointer;
+}
+
+
+.container-mix .imageBret{
+    grid-area: imageBret;
+    width: 90%;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.container-mix .textBret{
+    grid-area: textBret;
+    text-align: center;
+}
+.container-mix .buttonsBret{
+    grid-area: playerBret;
+    display: grid;
+    grid-template-areas:
+    "playBret pauseBret";
+    grid-template-columns: 1fr 1fr;
+}
+.container-mix .buttonsBret .playBret{
+    grid-area: playBret;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    left: 50%;
+    border-radius: 5px;
+    color: white;
+    background: #306FAE;
+    border: solid;
+    transition-property: background, border, color;
+    transition-timing-function: linear;
+    transition-delay: 0.5ms;   
+}
+.container-mix .buttonsBret .playBret:hover{
+    background: white;
+    color: #306FAE;
+    cursor:pointer;
+}
+.container-mix .buttonsBret .pauseBret{
+    grid-area: pauseBret;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    left: 20%;
+    border-radius: 5px;
+    color: white;
+    background: #306FAE;
+    border: solid;
+    transition-property: background, border, color;
+    transition-timing-function: linear;
+    transition-delay: 0.5ms;
+}
+.container-mix .buttonsBret .pauseBret:hover{
+    background: white;
+    color: #306FAE;
+    cursor:pointer;
+}
+
+#Blua{
+    width: 100%;
+}
+.container-audiovis{
+    background: linear-gradient(to right, #a3d9f5 0%, #d1d7da 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 250px;
+    
+}
+.container-audiovis h2{
+    text-align: left;
+    margin-left: 50px;
+}
+.container-audiovis p{
+    text-align: left;
+    margin-left: 80px;
+    font-size: 20px;
+}
+.container-audiovis > button{
+    border-radius: 30px;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    background: white;
+    color: #c74300;
+    border: #c74300 2px solid;
+    transition-property: background, color, border;
+    transition-delay: 0.5ms;
+    transition-timing-function: linear;
+}
+#cortos{
+    display: none;
+    margin-top: 40px;
+    margin-left: 60px;
+    justify-content: space-evenly;
+}
+#cortos > div > img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid white 5px;
+    justify-content: space-around;
+}
+#cortos > div > p{
+    background: white;
+    border-radius: 5px;
+    border: #000 solid 3px;
+    position: relative;
+    top: -50px;
+    width: 220px;
+    height: 90px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#cortos > button{
+    position: relative;
+    height: 50px;
+    flex-basis: 200px; 
+    min-width: 200px;
+    right: 700px;
+    top: 350px;
+    background: white;
+    color: #c74300;
+    font-size: 15px;
+    border: #c74300 solid 1px;
+    border-radius: 100px;
+}
+
+#TV{
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+#TV > h2{
+    text-align: center;
+    padding: 0px;
+}
+#TV > p{
+    text-align: center;
+}
+#TV > button{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    left: 600px;  
+
+    background: white;
+    color: #c74300;
+    font-size: 15px;
+    border: #c74300 solid 1px;
+    border-radius: 100px;
+}
+
+#TV > .weekly{
+    background: white;
+    position: relative;
+    right: -700px;
+    top: 603px;
+    text-align: left;
+    padding: 20px;
+    margin-top: -591px;
+    font-weight: lighter;
+    margin-left: 10%;
+    width: 390px;
+    border-radius: 20px;
+    
+}
+#TV iframe{
+    width: 385px;
+    padding-top: 20px;
+    height: 217px;
+}
+
+#TV > .el-circo{
+    position: relative;
+    right: -700px;
+    top: -611px;
+    background: white;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: lighter;
+    margin-left: 10%;
+    width: 390px;
+    border-radius: 20px;
+}
+#TV > .dos-tazas{
+    background: white;
+    text-align: left;
+    padding: 20px;
+    margin-top: -600px;
+    font-weight: lighter;
+    margin-left: 10%;
+    width: 390px;
+    border-radius: 20px;
+}
+#TV > .lucia{
+    
+    background: white;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: lighter;
+    margin-left: 10%;
+    width: 390px;
+    border-radius: 20px;
+}
+#TV img{
+    width: 385px;
+    padding-top: 20px;
+    height: 217px;
+}
+#post{
+    display: none;
+    width: 100%;
+}
+#post > h2{
+    text-align: center;
+}
+#post .el-vertedero{
+    background: white;
+    margin-left: 50px;
+    margin-right: 25px;
+    border-radius: 20px;
+    align-content: center;
+    padding: 30px;
+}
+#post iframe{
+    width: 386px;
+    height: 217px;
+    padding-top: 30px;
+    padding-left: 100px;
+    justify-content: space-around;
+    object-fit: fill;
+}
+#post > button{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    left: 600px;  
+    background: white;
+    color: #c74300;
+    font-size: 15px;
+    border: #c74300 solid 1px;
+    border-radius: 100px;
+}
+#textocontacto{
+    max-width: 100%;
+    background: #17BEBB;
+    margin-bottom: -25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#textocontacto h2 {
+    text-align: center;
+    line-height: 10px;
+}
+#textocontacto p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 5px;
+    padding-bottom: 35px;
+}
+#contacto{
+    background: #17BEBB;
+    max-width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;    
+}
+.whats{
+    margin-left: 20px;
+}
+.whats p{
+    text-align: center;
+}
+.whats img {
+    width: 100px;
+}
+.LinkedIn img {
+    width: 100px;
+}
+.LinkedIn p {
+    text-align: center;
+}
+.fiverr img {
+    width: 100px;
+    margin-right: 20px;
+}
+.fiverr p {
+    text-align: center;
+}
+#Mensaje{
+    background: #E9EB87;
+    padding-bottom: 20px;
+    margin-bottom: 250px;
+    max-width: 100%;
+}
+#Mensaje .nombre{
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+#Mensaje .asunto{
+    margin: 20px;
+    margin-left: 100px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+#Mensaje .correo{
+    margin: 20px;
+    display: block;
+    margin-left: 100px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+#Mensaje .mensaje{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 200px;
+    border-radius: 5px;
+}
+.etiquetaNombre{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+    padding-top: 50px;
+    display: block;
+    margin-right: -90px;
+}
+.etiquetaAsunto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+    display: block;
+    padding-top: 25px;
+    margin-right: -90px;
+}
+.etiquetaCorreo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+    display: block;
+    padding-top: 25px;
+    margin-right: -90px;
+}
+.etiquetaMensaje{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+    display: block;
+    padding-top: 25px;
+    margin-right: -90px;
+}
+
+.enviar{
+    margin-left: 100px;
+}
+
+#Gracias{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #E9EB87;
+    margin-top: -59px;
+    margin-bottom: 250px;
+    display: none;
+    max-width: 100%;
+}
+#Gracias h2{
+    text-align: center;
+}
+#Gracias h3{
+    text-align: center;
+    padding-bottom: 60px;
+}
+#button{
+    margin-left: 100px;
+
+}

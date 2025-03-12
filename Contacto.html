@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" type="image/png" href="Multimedia/briefcase.png">
+</head>
+<body>
+    <section id="Presentación">
+        <h1>
+            Víctor Monforte
+        </h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="Portafolio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="ProduccionMusical.html">Producción Musical</a>
+                </li>
+                <li>
+                    <a href="Audiovisual.html">Producción Audiovisual</a>
+                </li>
+                <li class="current">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul> 
+        </div>
+    </section>
+    <div id="textocontacto">
+        <h2>
+            Hablemos
+        </h2>
+        <p>
+            Contactame por alguna plataforma o bien, escribe tu mensaje. 
+        </p>
+    </div>
+    <section id="contacto">
+        <div class="whats">
+            <a href="https://wa.me/5561489485" target="_blank"> <img src="Multimedia/social.png" alt="WhatsApp contacto"> </a>
+            <p>
+                WhatsApp
+            </p>
+        </div>
+        <div class="LinkedIn">
+            <a href="https://www.linkedin.com/in/víctor-pérez-671646195" target="_blank"> <img src="Multimedia/linkedin.png" alt="Linkedin contacto"> </a>
+            <p>
+                LinkedIn
+            </p>
+        </div>
+        <div class="fiverr">
+            <a href="https://www.fiverr.com/s/AyDGmyY" target="_blank"> <img src="Multimedia/fiverr.png" alt="Fiverr contacto"></a>
+            <p>
+                Fiverr
+            </p>
+        </div>
+    </section>
+        <section id="Mensaje">
+            <label class="etiquetaNombre" for="nombre">Nombre</label>
+            <input type="text" class="nombre" placeholder="Nombre">
+    
+            <label class="etiquetaAsunto" for="asunto">Asunto</label>
+            <input type="text" class="asunto" placeholder="Asunto">
+    
+            <label class="etiquetaCorreo" for="correo">Correo</label>
+            <input type="text" class="correo" placeholder="email">
+    
+            <label class="etiquetaMensaje" for="mensaje">Mensaje</label>
+            <textarea class="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit" class="enviar"  onclick="enviar()">Enviar</button>      
+        </section>
+    <div id="Gracias">
+        <h2>
+            ¡Gracias!
+        </h2>
+        <h3>
+            Me pondré en contacto contigo.
+        </h3>
+    </div>
+    <footer>
+            <h2>
+                Víctor Monforte
+            </h2>
+            <p>
+                &copy; Esta página fue creada por Víctor Pérez Monforte a través de HTML y CSS
+            </p>
+        </div>
+    </footer>
+</body>
+<script>
+    function enviar(){
+        var name = document.getElementsByClassName("nombre")[0].value;
+        var asunto = document.getElementsByClassName("asunto")[0].value;
+        var correo = document.getElementsByClassName("correo")[0].value;
+        var mensaje = document.getElementsByClassName("mensaje")[0].value;
+        var Mensaje = document.getElementById("Mensaje");
+        var gracias = document.getElementById("Gracias");
+        
+        console.log("nombre:" + " " + name + " " + "Asunto:" + " " + asunto + " " + "Correo:" + " " + correo + " " + "Mensaje:" +mensaje);
+        Mensaje.style.display = "none";
+        gracias.style.display = "block";
+
+
+    }
+</script>
+</html>

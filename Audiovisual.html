@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisual</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" type="image/png" href="Multimedia/briefcase.png"> 
+</head>
+<body>
+    <section id="Presentación">
+        <h1>
+            Víctor Monforte
+        </h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="Portafolio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="ProduccionMusical.html">Producción Musical</a>
+                </li>
+                <li class="current">
+                    <a href="Audiovisual.html">Producción Audiovisual</a>
+                </li>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul> 
+        </div>
+    </section>
+    <section id="Blua">
+        <div class="container-audiovis">
+            <h2>
+                Proyectos audiovisuales
+            </h2>
+            <p>
+                He trabajado en diversos productos audiovisuales,
+                 donde he participado como sonidista, audio en vivo y post-productor de audio.
+            </p>
+            <button type="button" onclick="showc()" onmouseover="hover(this, '#c74300', 'white', 'dashed')" onmouseleave="hover(this, 'white', '#c74300', 'solid')">Cortometrajes</button>
+            <button type="button" onclick="showtv()" onmouseover="hover(this, '#c74300', 'white', 'dashed')" onmouseleave="hover(this, 'white', '#c74300', 'solid')">TV</button>
+            <button type="button" onclick="showpost()" onmouseover="hover(this, '#c74300', 'white', 'dashed')" onmouseleave="hover(this, 'white', '#c74300', 'solid')">Post-Producción</button>
+            <div id = cortos>
+                <div>
+                    <img src="https://1drv.ms/i/c/a2eb417d308cbb76/IQR2u4wwfUHrIICido0AAAAAAQFH1tUTEnAhKntBGtki3RY?" alt="Los Anormales">
+                    <p>
+                        Los Anormales. <br>
+                        Dir. Axel Olivar
+                    </p>
+                </div>
+                <div>
+                    <img src="https://1drv.ms/i/c/a2eb417d308cbb76/IQR2u4wwfUHrIICiYo0AAAAAAZ1wX7ZQAtz5T1ZR4cBohH4?" alt="Atomic Fire">
+                    <p>
+                        Atomic Fire. <br>
+                        Dir. Andrés Martínez
+                    </p>
+                </div>
+                <div>
+                    <img src="https://1drv.ms/i/c/a2eb417d308cbb76/IQR2u4wwfUHrIICiX40AAAAAAWq8WOMPYw6P3tvy0H2037Q?" alt="Comienza el Juego">
+                    <p>
+                        Comienza el Juego - EP 1
+                    </p>
+                </div>
+                <button type="button" onclick="closec(this)" onmouseover="hover(this, '#c74300', 'white', 'dashed')" onmouseleave="hover(this, 'white', '#c74300', 'solid')">Cerrar</button>
+            </div>
+            <div id="TV">
+                <h2>
+                    TV en vivo
+                </h2>
+                <p>
+                    Los programas de TV en vivo son programas transmitidos en YouTube en vivo. En estos programas tuve la oportunidad de trabajar como sonido directo, asegurandome que el sonido salga lo mejor posible.
+                </p>
+                <div class="lucia">
+                    <h3>
+                        Dra. Lucía Temporada 2
+                    </h3>
+                    <hr>
+                    <img src="Multimedia/portada-teaser-dra-lucia-t2.jpg" alt="Teaser doctora lucia">
+                    <img src="Multimedia/lucia.jpg" alt="Doctora Lucia cover">
+                </div>
+                <div class="weekly">
+                    <h3>
+                        Weekly
+                    </h3>
+                    <hr>
+                    <iframe src="https://www.youtube.com/embed/F5DffJXOU3s" title="Weekly. - T3E21 - Doja Cat, enemiga pública de Paraguay - Blua Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/F5DffJXOU3s" title="Weekly. - T3E21 - Doja Cat, enemiga pública de Paraguay - Blua Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="el-circo">
+                    <h3>
+                        El Circo
+                    </h3>
+                    <hr>
+                    <iframe src="https://www.youtube.com/embed/uUPLk8jVajM" title="&quot;Viruela del Chango&quot; - El Circo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/wAfYZ_bpeg4?si=Mn5bHE2By0jSGAT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="dos-tazas">
+                    <h3>
+                        Dos Tazas y Media
+                    </h3>
+                    <hr>
+                    <iframe src="https://www.youtube.com/embed/uWVaY9yl7Nw" title="Me da miedo tener hijos | Dos Tazas y Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/oovnLxpSU0I" title="Sacando verdades con mi ex | Dos Tazas y Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <button type="button" onclick="closec(this)" onmouseover="hover(this, '#c74300', 'white', 'dashed')" onmouseleave="hover(this, 'white', '#c74300', 'solid')">Cerrar</button>
+            </div>
+            <div id="post">
+                <h2>
+                    Post-producción
+                </h2>
+                <p>
+                    En la parte de la post-producción he tenido la oportunidad de editar un podcast, asegurandome de editar, limpiar y mejorar el sonido.
+                </p>
+                <div class="el-vertedero">
+                    <h3>
+                        El Vertdero
+                    </h3>
+                    <hr>
+                    <iframe src="https://www.youtube.com/embed/jF7SC6fg5Is" title="EL VERTEDERO #17 - WAVY | ¿Cómo hacer tu propia pasarela de modas? | Blua Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/n_n1UX3Sr48" title="EL VERTEDERO #15 - DAAZ | ¿Cómo superar tu propio éxito? | Blua Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            <button type="button" onclick="closec(this)" onmouseover="hover(this, '#c74300', 'white', 'dashed')" onmouseleave="hover(this, 'white', '#c74300', 'solid')">Cerrar</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>
+            Víctor Pérez Monforte
+        </h2>
+        <p>
+            &copy; Esta página fue creada por Víctor Pérez Monforte a través de HTML y CSS
+        </p>
+</footer>
+</body>
+
+<script>
+    function hover(hovering, bg, color, border){
+        hovering.style.background = bg;
+        hovering.style.color = color;
+        hovering.style.border = border;
+    }
+    function closec(elemento){
+        var identify = elemento.closest("div");
+        console.log(identify);
+        identify.style.display = "none";
+    }
+    function showc(){
+        c = document.getElementById("cortos");
+        c.style.display = "flex";
+        tv.style.display = "none";
+        pp.style.display = "none";
+    }
+    function showtv(){
+        tv = document.getElementById("TV");
+        tv.style.display = "block";
+        c.style.display = "none";
+        pp.style.display = "none";
+    }
+    function showpost(){
+        pp= document.getElementById("post");
+        pp.style.display = "block";
+        c.style.display = "none";
+        tv.style.display = "none";
+    }
+</script>
+</html>
