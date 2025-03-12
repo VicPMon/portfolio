@@ -827,6 +827,7 @@ footer > p{
     padding-bottom: 20px;
     display: flex;
     justify-content: space-around;    
+    margin-bottom: 250px;
 }
 .whats{
     margin-left: 20px;
@@ -855,6 +856,7 @@ footer > p{
     padding-bottom: 20px;
     margin-bottom: 250px;
     max-width: 100%;
+    display: none;
 }
 #Mensaje .nombre{
     display: block;
