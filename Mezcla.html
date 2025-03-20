@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezcla Creativa</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" type="Image/png" href="Multimedia/briefcase.png">
+    <script src="https://kit.fontawesome.com/60190b79ac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="Presentación">
+        <h1>
+            Víctor Pérez Monforte
+        </h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="Portafolio.html">Inicio</a></li>
+                <li  class="current"><a href="ProduccionMusical.html" style="color:#B9FAF8;">Producción Musical</a></li>
+                <li><a href="Audiovisual.html">Producción Audiovisual</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    <section id="MezclaCreativa">
+        <h1>
+            Ambos proyectos representan una exploración creativa. Realicé una propuesta para aplicar técnicas de mezcla y masterización y así lograr un sonido de alta calidad.
+        </h1>
+        <div class="container-mix">
+            <img class="imageIP" src="https://1drv.ms/i/c/a2eb417d308cbb76/IQTpxYjd2ufMQpeGX9MVys_PAe3urskbLbUDYl6ZAjPIRx4?" alt="IronPoint">
+            <p class="textIP">
+                Créditos en IG a: @IronPoint , @RoswellProAudio
+            </p>
+            <audio id="IronPoint" src="Expired - Iron Point (Prod. VM).mp3"></audio>
+            <div class="iconsIP">
+                <div onclick="backwardIP()"><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="playPausebtnIP"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+            <input type="range" value="0" id="progressIP">
+
+            <script>
+                let progressIP = document.getElementById("progressIP")
+                let audioIP = document.getElementById("IronPoint")
+                let ctrlIconIP = document.getElementById("playPausebtnIP")
+                audioIP.onloadedmetadata = function(){
+                    progressIP.max = audioIP.duration;
+                    progressIP.value = audioIP.currentTime;
+                    audioIP.pause();
+                }
+
+                function playPause(){
+                    if (ctrlIconIP.classList.contains("fa-pause")){
+                        audioIP.pause();
+                        ctrlIconIP.classList.remove("fa-pause")
+                        ctrlIconIP.classList.add("fa-play")
+                    }else{
+                        audioIP.play();
+                        ctrlIconIP.classList.remove("fa-play")
+                        ctrlIconIP.classList.add("fa-pause")
+
+                    }
+                }
+                function backwardIP(){
+                    progressIP.value = 0;
+                    audioIP.currentTime = progressIP.value;
+                    audioIP.play();
+                    ctrlIconIP.classList.remove("fa-play");
+                    ctrlIconIP.classList.add("fa-pause")
+                }
+                
+                if (audioIP.play()){
+                    setInterval(()=>{
+                        progressIP.value = audioIP.currentTime;
+                    },500)
+                }
+
+                progressIP.onchange = function(){
+                    audioIP.play();
+                    audioIP.currentTime = progressIP.value;
+                    ctrlIconIP.classList.add("fa-pause");
+                    ctrlIconIP.classList.remove("fa-play");
+
+                }
+            </script>
+
+            <img class="imageBret" src="https://1drv.ms/i/c/a2eb417d308cbb76/IQQd7o4e3cICSqXXzRXmRpRpAWYARu0MzYoyPwoq0yopUo0?" alt="Bret">
+            <p class="textBret">
+                Créditos: @RoswellProAudio, Bret Alexander, The Band
+            </p>
+            <audio id="Bret" src="Bret Alexander - The Weight (Prod.VM).mp3"></audio>
+            <div class="iconsBret">
+                <div onclick="backwardBret()"><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPauseBret()"><i class="fa-solid fa-play" id="playPausebtnBret"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+
+            <input type="range" value="0" id="progressBret">
+
+            <script>
+                let progressBret = document.getElementById("progressBret")
+                let audioBret = document.getElementById("Bret")
+                let ctrlIconBret = document.getElementById("playPausebtnBret")
+                audioBret.onloadedmetadata = function(){
+                    progressBret.max = audioBret.duration;
+                    progressBret.value = audioBret.currentTime;
+                    audioBret.pause();
+                }
+
+                function playPauseBret(){
+
+                    if (ctrlIconBret.classList.contains("fa-pause")){
+                        audioBret.pause();
+                        ctrlIconBret.classList.remove("fa-pause")
+                        ctrlIconBret.classList.add("fa-play")
+                    }else{
+                        audioBret.play();
+                        ctrlIconBret.classList.remove("fa-play")
+                        ctrlIconBret.classList.add("fa-pause")
+
+                    }
+                }
+                
+                function backwardBret(){
+                    progressBret.value = 0;
+                    audioBret.currentTime = progressBret.value;
+                    audioBret.play();
+                    ctrlIconBret.classList.remove("fa-play");
+                    ctrlIconBret.classList.add("fa-pause")
+                }
+
+                if (audioBret.play()){
+                    setInterval(()=>{
+                        progressBret.value = audioBret.currentTime;
+                    },500)
+                }
+
+                progressBret.onchange = function(){
+                    audioBret.play();
+                    audioBret.currentTime = progressBret.value;
+                    ctrlIconBret.classList.add("fa-pause");
+                    ctrlIconBret.classList.remove("fa-play");
+
+                }
+            </script>
+
+            
+ 
+        </div>
+    </section>
+
+    <footer>
+        <h2>
+            Víctor Pérez Monforte
+        </h2>
+        <p>
+            © Esta página fue creada en 2025 por Víctor Pérez Monforte a través de HTML, CSS y JavaScript.
+        </p>
+    </footer>
+    
+</body>
+</html>
