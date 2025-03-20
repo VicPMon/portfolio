@@ -188,10 +188,7 @@ header{
     .hablemos-imagen {
         padding: 0;
     }
-    #Proyectos a{
-        font-size: 10px;
-        font-weight: 600;
-    }
+  
 }
 @media (max-width: 300px) {
     #Hablemos {
@@ -207,9 +204,7 @@ header{
     .hablemos-imagen {
         padding: 0;
     }
-    #Proyectos a{
-        font-size: 10px;
-    }
+
 }
 
 #Material-Principal{
