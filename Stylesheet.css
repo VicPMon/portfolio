@@ -190,7 +190,7 @@ header{
     }
     #Proyectos a{
         font-size: 10px;
-        font-weight: 200;
+        font-weight: 600;
     }
 }
 @media (max-width: 300px) {
@@ -208,7 +208,7 @@ header{
         padding: 0;
     }
     #Proyectos a{
-        font-size: 5px;
+        font-size: 10px;
     }
 }
 
